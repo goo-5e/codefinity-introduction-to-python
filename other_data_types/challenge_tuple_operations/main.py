@@ -1,0 +1,29 @@
+# Current inventory on shelf
+shelf = ("apples", "oranges", "bananas", "apples", "grapes", "bananas", "apples")
+
+apple_count = shelf.count("apples")
+
+print(f"Number of Apples:{apple_count}")
+
+banana_index = shelf.index("bananas")
+
+print(f"First Banana Index:{banana_index}")
+
+if apple_count < 5:
+    print(f"Apples need to be restocked.")
+else:
+    print(f"Apples are sufficiently stocked.")
+
+grapes_count = shelf.count("grapes")
+
+if grapes_count <= 1:
+    print(f"Grapes need to be restocked.")
+else:
+    print(f"Grapes are sufficiently stocked.")
+
+if "oranges" in shelf:
+    oranges_index = shelf.index("oranges")
+    print(f"Oranges are at index:{oranges_index}")
+else:
+    print(f"Oranges are out of stock")
+    
